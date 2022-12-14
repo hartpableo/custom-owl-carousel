@@ -1,0 +1,135 @@
+body {
+    min-height: 100vh;
+    background-color: #d371e6;
+}
+
+.gallery-con {
+    padding-top: 110px;
+}
+
+.carousel--gallery figure {
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  margin-inline: auto;
+}
+
+.carousel--gallery figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5px;
+}
+
+.owl-nav i {
+    font-size: 1.7em;
+    line-height: 1;
+}
+
+.owl-item.highlight figure {
+    width: 350px;
+    height: 350px;
+    margin-top: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    filter: brightness(115%);
+}
+
+.owl-item.small figure {
+    width: 240px;
+    height: 240px;
+    filter: brightness(70%);
+    margin-top: 75px;
+}
+
+.owl-item.small.left figure {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.owl-item.small.right figure {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.owl-item.smallest figure {
+    width: 175px;
+    height: 175px;
+    filter: brightness(20%);
+    margin-top: 113px;
+}
+
+@media (max-width: 1400px) {
+    .owl-item.highlight figure {
+        width: 310px;
+        height: 310px;
+    }
+    .owl-item.small figure {
+        width: 220px;
+        height: 220px;
+        margin-top: 45px;
+    }
+    .owl-item.smallest figure {
+        width: 155px;
+        height: 155px;
+        margin-top: 82px;
+    }
+    .owl-item.small.left figure {
+        margin-left: -19px;
+    }
+    .owl-item.small.right figure {
+        margin-right: -19px;
+    }
+    .owl-nav {
+        top: 50%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .carousel--gallery {
+        max-width: 1010px;
+        margin: auto;
+    }
+    .owl-item:not(.highlight) figure {
+        width: 220px;
+        height: 220px;
+        margin-top: 45px;
+        filter: brightness(15%);
+    }
+    .owl-item.left figure {
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .owl-item.right figure {
+        margin-right: auto;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .carousel--gallery {
+        max-width: 820px;
+    }
+    .owl-item.highlight figure {
+        width: 250px;
+        height: 250px;
+    }
+    .owl-item:not(.highlight) figure {
+        width: 150px;
+        height: 150px;
+    }
+}
