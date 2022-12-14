@@ -13,7 +13,7 @@ let callOwl = () => {
     } else if (window_width > 1200) {
         customCarouselDesktop();
     } else {
-
+        // to be continued...
     }
 }
 
@@ -31,9 +31,7 @@ let carouselInit = () => {
         nav: true,
         navText: [`<i class="bi bi-arrow-left-circle"></i>`,`<i class="bi bi-arrow-right-circle"></i>`],
         responsive: {
-            // 800: {
-            //     items
-            // },
+            // to be continued...
             800: {
                 items: 3,
             },
